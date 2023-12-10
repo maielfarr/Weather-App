@@ -1,0 +1,150 @@
+body {
+  background-image: url(../images/sky-landscape-nature-sunset-art-hd-wallpaper-thumb.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fff !important;
+  background-color: #000;
+  text-align: center;
+}
+.btn_input {
+  cursor: pointer;
+}
+
+.inp {
+  width: fit-content;
+  margin: auto;
+  border-radius: 15px;
+  border: 2px solid #366471;
+  background-color: #fff;
+}
+.inp input {
+  width: 300px;
+  height: 26px;
+  outline: none;
+  border-radius: 15px;
+  border: none;
+  padding: 7px;
+}
+.inp button {
+  width: 58px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  background-color: transparent;
+  border-radius: 15px;
+  color: #000;
+}
+.parut {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  align-items: center;
+  height: 88vh;
+}
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+.card {
+  position: relative;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.089);
+  cursor: pointer;
+}
+
+.city {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  color: white;
+}
+
+.weather {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 1.2px;
+  color: rgb(197, 197, 197);
+}
+
+.temp {
+  font-size: 1.8em;
+  color: white;
+}
+
+.minmaxContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.min,
+.max {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0px 20px;
+  gap: 4px;
+}
+
+.max {
+  align-items: flex-start;
+  border-left: 2px solid white;
+}
+
+.maxHeading,
+.minHeading {
+  font-size: 0.7em;
+  font-weight: 600;
+  color: white;
+}
+
+.maxTemp,
+.minTemp {
+  font-size: 0.6em;
+  font-weight: 500;
+  color: rgb(197, 197, 197);
+}
+.card-container {
+  position: relative;
+}
+.card-container::before {
+  width: 70px;
+  height: 70px;
+  content: "";
+  position: absolute;
+  background-color: rgb(144, 161, 255);
+  z-index: -1;
+  border-radius: 50%;
+  left: 100px;
+  top: 50px;
+  transition: all 1s;
+}
+
+.card-container:hover::before {
+  transform: translate(-50px, 50px);
+}
+
+.img_sun {
+  width: 40px;
+}
+.p-1 {
+  width: 15%;
+}
+.flex.text-white.degree {
+  display: flex;
+  justify-content: center;
+}
